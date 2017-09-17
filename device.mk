@@ -124,7 +124,8 @@ PRODUCT_PACKAGES += \
 
 # Oter Product Packages
 PRODUCT_PACKAGES += \
-	SoundRecorder
+	SoundRecorder \
+	SpeechRecorder
 
 # CNE
 PRODUCT_PACKAGES += \
