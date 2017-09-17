@@ -122,6 +122,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     SnapdragonCamera
 
+# Oter Product Packages
+PRODUCT_PACKAGES += \
+	SoundRecorder
+
 # CNE
 PRODUCT_PACKAGES += \
     libcnefeatureconfig
