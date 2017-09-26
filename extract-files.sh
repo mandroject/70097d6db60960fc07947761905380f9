@@ -22,7 +22,6 @@ set -e
 export DEVICE=gemini
 export DEVICE_COMMON=gemini
 export VENDOR=xiaomi
-
 export DEVICE_BRINGUP_YEAR=2016
 
 # Load extract_utils and do some sanity checks

@@ -124,8 +124,6 @@
     <!-- Period of time in which to consider light samples in milliseconds. -->
     <integer name="config_autoBrightnessAmbientLightHorizon">5000</integer>
 
-
-
     <!-- MSM8996 POSITION -->
     <!-- If this is true, the screen will come on when you unplug usb/power/whatever. -->
     <bool name="config_unplugTurnsOnScreen">true</bool>

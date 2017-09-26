@@ -20,9 +20,9 @@ set -e
 
 # Required!
 export DEVICE=gemini
-export DEVICE_COMMON=gemini
 export VENDOR=xiaomi
 export DEVICE_BRINGUP_YEAR=2016
+
 INITIAL_COPYRIGHT_YEAR=2017
 
 # Load extract_utils and do some sanity checks
@@ -39,7 +39,7 @@ fi
 . "$HELPER"
 
 # Initialize the helper for common
-setup_vendor "$DEVICE_COMMON" "$VENDOR" "$CM_ROOT" true
+setup_vendor "$DEVICE" "$VENDOR" "$CM_ROOT" true
 
 # Copyright headers and guards
 write_headers "capricorn gemini lithium natrium scorpio"

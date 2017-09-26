@@ -226,5 +226,17 @@ WIFI_DRIVER_FW_PATH_STA := "sta"
 WIFI_DRIVER_FW_PATH_P2P := "p2p"
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
+# Board
+TARGET_BOARD_INFO_FILE ?= $(DEVICE_PATH)/board-info.txt
+
+# Kernel
+TARGET_KERNEL_CONFIG := gemini_defconfig
+
+# NFC
+NXP_CHIP_TYPE := 2
+
+# Properties
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
+
 # Inherit from the proprietary version
 -include vendor/xiaomi/gemini/BoardConfigVendor.mk

@@ -15,23 +15,17 @@
 # limitations under the License.
 #
 
-$(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
-
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/xiaomi/gemini/gemini-vendor.mk)
-
-# Overlays
-DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
 
 # Screen density
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
-# Boot animation
-TARGET_SCREEN_HEIGHT := 1920
-TARGET_SCREEN_WIDTH := 1080
+# Local overlays
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay \
+    $(LOCAL_PATH)/overlay-lineage
 
 # HWUI overrides
 $(call inherit-product, frameworks/native/build/phone-xxhdpi-3072-hwui-memory.mk)
@@ -220,9 +214,9 @@ PRODUCT_PACKAGES += \
     ethertypes \
     libebtc
 
-# Lights
+# Device init scripts
 PRODUCT_PACKAGES += \
-    lights.msm8996
+    init.target.rc
 
 # LiveDisplay native
 PRODUCT_PACKAGES += \

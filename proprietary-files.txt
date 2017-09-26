@@ -756,6 +756,9 @@ vendor/lib64/libsystem_health_mon.so
 vendor/lib/libmdmdetect.so
 vendor/qcril.db
 
+# NFC firmware
+vendor/firmware/libpn548ad_fw.so
+
 # Sensors
 etc/sensors/hals.conf
 etc/sensors/sensor_def_qcomdev.conf
@@ -805,3 +808,7 @@ vendor/lib/mediadrm/libwvdrmengine.so|c2199998c12f0f298be0b3f82eaac7e299a0feaa
 
 # WiFi
 bin/cnss-daemon
+
+# Thermal
+etc/thermal-engine-8996.conf
+etc/thermal-engine-8996-a1.conf
