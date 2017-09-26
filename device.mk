@@ -120,7 +120,8 @@ PRODUCT_COPY_FILES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    SnapdragonCamera
+    SnapdragonCamera \
+    SnapdragonGallery
 
 # Oter Product Packages
 PRODUCT_PACKAGES += \
